@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background: rgb(251,145,63);
+    background: radial-gradient(circle, rgba(251,145,63,1) 0%, rgba(252,222,70,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+.icon{
+    position: absolute;
+    left: 96%;
+    display: none;
+    
+}
+.icon i{
+    font-size: 30px;
+    color: rgba(19, 14, 44, 0.863) ;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+.navbar ul li{
+    margin-right: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:rgba(19, 14, 44, 0.863);
+    transition: 1s ease-in;
+}
+.navbar ul li a:hover{
+    background-color: rgba(233, 177, 105, 0.877);
+    color: blue;
+    border-radius: 50px;
+}
+/*sekiler olan hiisede yuxari yazi olan hisse*/
+section{
+   background-color: rgba(19, 14, 44, 0.863); 
+   height: 100%;
+}
+.ParentsLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    margin-top: 25px;
+}
+.LetterText h1{
+    color: white;
+    font-size: 55px;
+    letter-spacing: 10px;
+    margin-top: 15px;
+}
+.Pgalery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Pgalery p{
+    color: orange;
+    font-size: 35px;
+    letter-spacing: 5px;
+    margin-top: 15px;
+    border-bottom: 3px solid orange ;
+    width: 30%;
+    text-align: center;
+    padding: 5px;
+}
+/*sekiller basliyan hisse*/
+.parentsImage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.parentsImage div{
+    width: 30%;
+    border: 2px solid orange;
+    margin: 20px 10px 10px 10px;
+}
+.parentsImage div img{
+    padding: 10px 0px 10px 35px;
+    transition: 1s ease-in-out;
+}
+.parentsImage{
+    transition: 1s ease-in-out;
+}
+.parentsImage:hover > :not(:hover){
+    opacity: .4;
+   
+}
+.parentsImage div img:hover{
+    transform: scale(1.2,1.2);
+    border-radius: 85px;
+}
+/*footer alt hissesi*/
+footer{
+    background-color: orange;
+    padding-top: 20px;
+    height: 100%;
+}
+.footerOrange{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.footerOrange h1, h2{
+    color: rgba(19, 14, 44, 0.863);
+    font-size: 25px;
+    padding-top: 15px;
+}
+.iconFooter{
+    position: absolute;
+    left: 95%;
+    top: 197%;
+}
+.iconFooter i{
+    color: rgba(19, 14, 44, 0.863);
+    font-size: 50px;
+    transition: 1s ease;
+}
+.iconFooter i:hover{
+    background-color: white;
+    opacity: 0.6;
+    transform:scale(2,2);
+    border-radius: 50%;
+
+}
+@media screen and ( max-width: 700px) {
+
+    .navbar{
+        background: rgb(251,145,63);
+        background: radial-gradient(circle, rgba(251,145,63,1) 0%, rgba(252,222,70,1) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+    }
+    .icon{
+        position: absolute;
+        left: 94%;
+        display: block;
+        
+        
+    }
+    .icon i{
+        font-size: 30px;
+        color: rgba(19, 14, 44, 0.863) ;
+    }
+    .navbar ul{
+        display: flex;
+        list-style-type: none;
+        display: none;
+    }
+    .navbar ul li{
+        margin-right: 20px;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color:rgba(19, 14, 44, 0.863);
+        transition: 1s ease-in;
+    }
+    .navbar ul li a:hover{
+        background-color: rgba(233, 177, 105, 0.877);
+        color: blue;
+        border-radius: 50px;
+    }
+    /*sectionda sekil olan hissede yuxari yazi olan hisse*/
+    section{
+        background-color: rgba(19, 14, 44, 0.863); 
+        height: 100%;
+     }
+
+     .ParentsLogo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        width: 80px;
+        height: 80px;
+        margin-top: 25px;
+    }
+    .LetterText h1{
+        color: white;
+        font-size: 55px;
+        letter-spacing: 10px;
+        margin-top: 15px;
+    }
+    .Pgalery{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .Pgalery p{
+        color: orange;
+        font-size: 35px;
+        letter-spacing: 5px;
+        margin-top: 15px;
+        border-bottom: 3px solid orange ;
+        width: 30%;
+        text-align: center;
+        padding: 5px;
+    }
+    /*sekkiler basliyan hisse*/
+
+    .parentsImage{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .parentsImage div{
+        width: 55%;
+        border: 2px solid orange;
+        margin: 20px 10px 10px 10px;
+    }
+
+    .parentsImage div img{
+        transition: 1s ease-in-out;
+        overflow: hidden;
+        padding: 15px 0px 15px 22px;
+    }
+    .parentsImage{
+        transition: 1s ease-in-out;
+    }
+    .parentsImage:hover > :not(:hover){
+        opacity: .4;
+       
+    }
+    .parentsImage div img:hover{
+        transform: scale(1.2,1.2);
+        border-radius: 85px;
+    }
+    /*footer alt hissesi*/
+    footer{
+        background-color: orange;
+        padding-top: 10px;
+        height: 100%;
+    }
+    .footerOrange{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px 10px 35px 15px;
+    }
+    .footerOrange h1, h2{
+        color: rgba(19, 14, 44, 0.863);
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .iconFooter{
+        position: absolute;
+        left: 92%;
+        top: 490%;
+    }
+    .iconFooter i{
+        color: rgba(19, 14, 44, 0.863);
+        font-size: 40px;
+        transition: 1s ease;
+    }
+    .iconFooter i:hover{
+        background-color: white;
+        opacity: 0.9;
+        transform:scale(1.5,1.5);
+        border-radius: 50%; 
+    }
+}
